@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("../img/wallpaper.jpeg") repeat;
+  color: #333;
+  text-align: center;
+}
+header,
+.left,
+.right {
+  position: absolute;
+  z-index: 200;
+}
+header {
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  height: 150px;
+}
+header h1 {
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+}
+header .type {
+  width: 122px;
+  height: 24px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+header .type li {
+  cursor: pointer;
+  float: left;
+  width: 60px;
+  height: 22px;
+  line-height: 24px;
+  font-size: 12px;
+  font-family: Arial;
+}
+header .type li.selected {
+  background: #333;
+  color: #fff;
+}
+header .lay {
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  width: 200px;
+  margin: 5px auto;
+}
+header .lay span {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 10px;
+}
+header .lay #volume {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.left {
+  left: 10px;
+  top: 170px;
+  bottom: 10px;
+  width: 200px;
+}
+.left ul {
+  overflow: auto;
+}
+.left ul li {
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.left ul li.selected {
+  color: green;
+}
+.right {
+  top: 170px;
+  right: 10px;
+  bottom: 10px;
+  left: 220px;
+}
